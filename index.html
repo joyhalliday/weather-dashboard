@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Assets/style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="Assets/script.js"></script>
     <title>Weather Tracker</title>
 </head>
@@ -12,11 +13,13 @@
     <header>
         <h1>Weather Tracker</h1>
     </header>
-    <section>
+    <section class="search">
         <label for="city">Enter a city</label>
         <input type="text" id="city">
-        <button>Search</button>
-        <p>Your previous searches:</p>
+        <button id="btn">Search</button>
     </section>  
+    <section>
+        <h4>Your previous searches:</h4>
+    </section>
 </body>
 </html>
