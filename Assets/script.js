@@ -38,24 +38,16 @@ $(document).ready(function () {
 
 function displayForecast(response) {
     console.log("weather", response);
-    $("#city-temp").text("Temp: " + response.list[0].main.temp)
-//display temp
-//display city name
-//wind speed
-//humidity
-}
+    $("#city-name").text("City: " + response.city.name);
+    $("#city-temp").text("Temp: " + response.list[0].main.temp);
+    $("#wind-speed").text("Wind Speed: " + response.list[0].main.humidity);
+    $("#humidity").text("Humidity: " + response.list[0].wind.speed);
+};
 
-//function fiveDay(response) {
-    //display the five forecast cards
-//}
+function fiveDay(response) {
+    console.log("here comes weather", response);
+};
 
-//$("#forecast").text("Today's weather")
-
-
-
-//var forecastEl = $("#forecast")
-
-//forecastEl.innerHTML = "weather"
 
 
 
